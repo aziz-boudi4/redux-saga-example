@@ -4,11 +4,11 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { createStore, applyMiddleware } from 'redux'
 import createSagaMiddleware from 'redux-saga'
+import rootSaga from './sagas'
 
 import Counter from './Counter'
 import reducer from './reducers'
 
-import { helloSaga } from './sagas'
 
 const sagaMiddleware = createSagaMiddleware()
 const store = createStore(
